@@ -1,0 +1,63 @@
+#graph-view {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+#active-county {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+#active-county label {
+  font-weight: bold;
+  padding: 10px;
+  color: #27374d;
+}
+
+#active-county select {
+  font-weight: bold;
+  background-color: #dde6ed;
+  color: black;
+  padding: 6px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.custom-dropdown {
+  font-size: 18px;
+  padding: 3px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dropdown select {
+  background-color: #dde6ed;
+  color: #27374d;
+  padding: 8px 12px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown select:hover {
+  background-color: #e0e0e0;
+}
+
+.topic-section {
+  height: auto;
+  width: 100%;
+  scroll-margin: 150px;
+  text-align: left;
+  padding: 8px;
+}

@@ -1,0 +1,129 @@
+.topic-container {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 14.5px;
+  border-radius: 8px; /* Menambahkan lengkungan pada seluruh sudut */
+}
+
+.topic-container h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 8px;
+  text-align: center;
+  background-color: rgb(5, 57, 116);
+  border-radius: 8px; /* Menambahkan lengkungan pada sudut h2 */
+}
+
+.two-column {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.three-column {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.two-column > * {
+  flex-basis: 52%;
+}
+
+.three-column > * {
+  flex-basis: 33.3333333333333%;
+}
+
+.topic-item {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.5em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Lengkungan pada setiap item */
+}
+
+.topic-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  margin: 0.5em;
+  border: 0px solid #526d82;
+  border-radius: 16px; /* Lengkungan besar di sudut icon */
+  color: white;
+  font-size: 0.875em;
+  cursor: pointer;
+}
+
+.topic-icon:hover {
+  background-color: #526d82;
+  cursor: pointer;
+  border-radius: 12px; /* Lengkungan sedikit lebih kecil pada hover */
+}
+
+.active {
+  background-color: #526d82;
+}
+
+.topic-icon > img {
+  height: 2em;
+  width: 2em;
+}
+
+.topic-text {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 8px; /* Lengkungan pada sudut teks */
+}
+
+.topic-text-bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .two-column {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .three-column {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .topic-item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0 !important;
+    font-size: 0.875em;
+  }
+}
+
+/* || Landscape Phone */
+@media screen and (min-width: 576px) {
+}
+/* || Tablets */
+@media screen and (min-width: 768px) {
+}
+/* || Desktops */
+@media screen and (min-width: 992px) {
+  .topic-item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    height: auto;
+    font-size: 0.875em;
+  }
+}
+/* || Large Desktops */
+@media screen and (min-width: 1200px) {
+  .topic-item {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    height: auto;
+    font-size: 1em;
+  }
+}
+
+/* || Larger Desktops */
+@media screen and (min-width: 1400px) {
+}

@@ -1,0 +1,44 @@
+#mapbox-view {
+  height: 85vh;
+  width: 100%;
+}
+
+.custom-control {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.custom-control > * {
+  margin: 0.5em;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #mapbox-view {
+    height: 70vh;
+  }
+
+  .custom-control {
+    align-items: center;
+  }
+
+  .custom-control > * {
+    margin: 0.25em;
+  }
+}
+
+@media (max-width: 480px) {
+  #mapbox-view {
+    height: 60vh;
+  }
+
+  .custom-control {
+    align-items: center;
+  }
+
+  .custom-control > * {
+    margin: 0.1em;
+  }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.map-page {
+  width: 100%;
+  height: 130vh;
+  background-color: #526d82;
+  padding-top: 100px;
+  position: relative;
+}
+
+#mapbox-section {
+  position: absolute;
+  width: 61%;
+  padding-top: 25px;
+  margin-left: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#graph-section {
+  height: 91vh;
+  width: 34%;
+  overflow-y: scroll;
+  position: relative;
+  margin-left: 50rem;
+  margin-top: 1.5rem;
+  margin-right: 50rem;
+  background-color: #dde6ed;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shepherd-modal-overlay-container.shepherd-modal-is-visible {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.shepherd-theme-custom .shepherd-content {
+  background-color: #fff !important;
+  color: #27374d !important;
+  font-size: 16px;
+  text-align: left;
+}
+
+.shepherd-theme-custom .shepherd-button {
+  background-color: #27374d !important;
+  color: #fff !important;
+}
+
+.shepherd-theme-custom .shepherd-button:hover {
+  background-color: #27374d !important;
+}
+
+.shepherd-theme-custom .shepherd-header {
+  background-color: #fff !important;
+}
+
+.shepherd-theme-custom .shepherd-footer {
+  background-color: #fff !important;
+}
+
+.shepherd-theme-custom .shepherd-title {
+  color: #fff !important;
+}
+
+.shepherd-theme-custom .shepherd-text {
+  color: #27374d !important;
+}

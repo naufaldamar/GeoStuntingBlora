@@ -1,0 +1,26 @@
+.button-toggle {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-toggle .btn {
+  margin-top: 4px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  color: #526d82;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.button-toggle .btn:hover {
+  background-color: #526d82;
+  color: #dde6ed;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}

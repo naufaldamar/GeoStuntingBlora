@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #444;
+}
+
+#map {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+#mapInset {
+  bottom: 50px;
+  right: 30px;
+  height: 180px;
+  width: 250px;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+#mapInset .mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+
+#story {
+  max-height: 30vh;
+  color: #fafafa;
+  opacity: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  #mapInset {
+    display: none;
+  }
+}
+
+#footer {
+  width: 100%;
+  min-height: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
+  position: relative;
+  z-index: 5;
+}
+
+#features {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+}
+
+.righty {
+  width: 33vw;
+  margin-left: 62vw;
+}
+
+.fully {
+  width: 100%;
+  margin: auto;
+}
+
+.step {
+  color: #27374d;
+  margin-top: 20vh;
+  opacity: 0;
+  text-align: justify;
+  background-color: #fafafa;
+  border-radius: 1px;
+}
+
+.step.active {
+  opacity: 0.99;
+}
+
+.step div {
+  padding: 25px 50px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.step img {
+  width: 100%;
+}
+
+/* Responsive design */
+@media screen and (max-width: 850px) {
+  #map {
+    top: 0;
+    height: 100vh;
+    width: 110vw;
+    position: fixed;
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  /* Adjust map size for smaller screens */
+  #map {
+    width: 110vw;
+  }
+
+  /* Hide map inset on smaller screens */
+  #mapInset {
+    display: none;
+  }
+
+  /* Adjust chapter alignment for smaller screens */
+  .centered {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .lefty {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .righty {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .fully {
+    width: 90%;
+    margin: auto;
+  }
+}
